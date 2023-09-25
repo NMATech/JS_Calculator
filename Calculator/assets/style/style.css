@@ -1,0 +1,72 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  /* background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); */
+  background-image: linear-gradient(120deg, #30cfd0 0%, #330867 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 20%;
+  height: 500px;
+  background-color: #3a4452;
+  margin: 50px auto;
+  transition: all 0.5s ease-in;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Lift the calculator on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+.more {
+  width: 30%;
+  transition: all 0.5s ease-out;
+}
+
+form div {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+}
+.display input {
+  flex: 1;
+  box-shadow: none;
+  text-align: right;
+  font-size: 45px;
+}
+
+input {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btnEqual {
+  width: 110px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="display">
+          <input id="displayText" type="text" name="display" />
+        </div>
+        <div class="wrapper">
+          <input type="button" value="AC" onclick="clearDisplay()" />
+          <input type="button" value="DE" onclick="deleteDisplay()" />
+          <input type="button" value="." onclick="addToDisplay('.')" />
+          <input type="button" value="/" onclick="setOperator('/')" />
+          <input
+            style="display: none"
+            type="button"
+            value="%"
+            onclick="newFunction('%')"
+          />
+          <input
+            style="display: none"
+            type="button"
+            value="x!"
+            onclick="factorial()"
+          />
+        </div>
+        <div class="wrapper">
+          <input type="button" value="7" onclick="addToDisplay('7')" />
+          <input type="button" value="8" onclick="addToDisplay('8')" />
+          <input type="button" value="9" onclick="addToDisplay('9')" />
+          <input type="button" value="x" onclick="setOperator('*')" />
+          <input
+            style="display: none"
+            type="button"
+            value="x²"
+            onclick="newFunction('x²')"
+          />
+          <input
+            style="display: none"
+            type="button"
+            value="xⁿ"
+            onclick="setOperator('xⁿ')"
+          />
+        </div>
+        <div class="wrapper">
+          <input type="button" value="4" onclick="addToDisplay('4')" />
+          <input type="button" value="5" onclick="addToDisplay('5')" />
+          <input type="button" value="6" onclick="addToDisplay('6')" />
+          <input type="button" value="-" onclick="setOperator('-')" />
+          <input
+            style="display: none"
+            type="button"
+            value="mod"
+            onclick="setOperator('mod')"
+          />
+          <input
+            style="display: none"
+            type="button"
+            value="√"
+            onclick="newFunction('√')"
+          />
+        </div>
+        <div class="wrapper">
+          <input type="button" value="1" onclick="addToDisplay('1')" />
+          <input type="button" value="2" onclick="addToDisplay('2')" />
+          <input type="button" value="3" onclick="addToDisplay('3')" />
+          <input type="button" value="+" onclick="setOperator('+')" />
+          <input
+            style="display: none"
+            type="button"
+            value="Cos"
+            onclick="setOperator('Cos')"
+          />
+          <input
+            style="display: none"
+            type="button"
+            value="Sin"
+            onclick="setOperator('')"
+          />
+        </div>
+        <div class="wrapper">
+          <input type="button" value="more" id="moreBtn" onclick="domBtn()" />
+          <input type="button" value="0" onclick="addToDisplay('0')" />
+          <input
+            class="btnEqual"
+            type="button"
+            value="="
+            onclick="setOperator('=')"
+          />
+          <input style="display: none" type="button" />
+          <input
+            style="display: none"
+            type="button"
+            value="π"
+            onclick="newFunction('π')"
+            id="PhiBtn"
+          />
+          <input
+            style="display: none"
+            type="button"
+            value="Tan"
+            onclick="newFunction('')"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/script/calculator.js"></script>
+    <script src="assets/script/more.js"></script>
+  </body>
+</html>
